@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<layers>
+    <layer name="occc.theme"
+        interface="occc.theme.interfaces.IProductSpecific" />
+</layers>
