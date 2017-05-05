@@ -1,53 +1,7 @@
-/*
- * Base structure
- */
-
-/* Move down content because we have a fixed navbar that is 50px tall */
-body {
-  /*padding-top: 50px;*/
+/*banner*/
+#banner-wrapper{
+  margin-bottom: 20px;
 }
-
-
-/*
- * Global add-ons
- */
-
-.sub-header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
-
-/*
- * Top navigation
- * Hide default border to remove 1px line.
- */
-.navbar-fixed-top {
-  border: 0;
-}
-
-/*
- * Sidebar
- */
-
-/* Hide for mobile, show later */
-/*.sidebar {
-  display: none;
-}
-@media (min-width: 768px) {
-  .sidebar {
-    position: fixed;
-    top: 51px;
-    bottom: 0;
-    left: 0;
-    z-index: 1000;
-    display: block;
-    padding: 20px;
-    overflow-x: hidden;
-    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-/*    background-color: #f5f5f5;
-    border-right: 1px solid #eee;
-  }
-}*/
 
 /* Sidebar navigation */
 .sidebar{
@@ -82,22 +36,127 @@ body {
   margin-top: 0;
 }
 
-
-/*
- * Placeholder dashboard ideas
- */
-
-.placeholders {
-  margin-bottom: 30px;
-  text-align: center;
-}
-.placeholders h4 {
-  margin-bottom: 0;
-}
-.placeholder {
+/*porlet*/
+dl.portlet{
   margin-bottom: 20px;
+  font-size: 14px !important;
 }
-.placeholder img {
+dl.portlet > dd,
+dl.portlet > dt{padding: 10px 15px !important}
+dt.portletHeader,dt.portletHeader a{
+  background: #337ab7 !important; 
+  color: #fff !important;
+}
+dt.portletHeader.hiddenStructure{
+  display: none;
+}
+/*ovorride plone css*/
+#content .discreet, #sidebar .discreet, .portletStaticText .discreet,
+#content{font-size: inherit;}
+/*edit bar*/
+#content-views a, #content li.formTab a, #content-core li.formTab a{
+    line-height: 18px;
+}
+#contentActionMenus{top: 0.1em}
+#contentActionMenus dl.actionMenu{margin-bottom: 0}
+.formQuestion.label,
+label .label{
+    color: #333;
+    padding:0;
+}
+#portal-personaltools{
+  position: absolute;
+    right: 8%;
+    background-color: #e3e3e3;
+    padding: 5px;
+    z-index: 1;
+    font-size: 80%;
+    border-radius: 0 0 5px 5px;
+}
+#portal-personaltools dd a:hover{
+  background-color: #799D2D;
+}
+
+/*Forms elements*/
+select,
+textarea,
+input[type=password],
+input[type=text]{
+  display: block;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+input.textType{
+
+}
+.plone_jscalendar select,
+#formfield-form-widgets-IBirthdate-birthday select,
+#formfield-form-widgets-IBirthdate-birthday input,
+#formfield-form-widgets-IBirthdate-birthday select,
+#formfield-form-widgets-time_out select,
+#formfield-form-widgets-time_in select,
+.searchField.portlet-search-gadget, 
+#formfield-form-widgets-IEventBasic-start select,
+#formfield-form-widgets-IEventBasic-end select,
+#login-form input[type=text],
+#login-form input[type=password],
+.ArchetypesCalendarWidget select,
+#sharing-user-group-search,
+#fieldset-dates select,
+#formfield-form-widgets-monthyear select{
   display: inline-block;
-  border-radius: 50%;
+}
+.fieldTextFormat > select{
+  display: inline-block;
+  vertical-align: baseline !important;
+}
+
+/*buttons*/
+button,
+input[type=button],
+input[type=submit]{
+  display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc; 
+}
+input[type=button]:hover,
+input[type=submit]:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+input[type=button]:focus,
+input[type=submit]:focus {
+    color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
 }

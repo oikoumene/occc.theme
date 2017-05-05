@@ -48,14 +48,17 @@
 
             <div class="{$central}">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12">
+                    <div class="col-xs-12">
+                        <div id="banner-wrapper">
+                            <img src="/++theme++occc.theme/img/banner.jpg" alt="" />
+                        </div>
                         <xsl:apply-templates css:select="#edit-bar" />
                         <xsl:apply-templates css:select="#kssPortalMessage" />
                         <xsl:apply-templates css:select="#content" />
                     </div>
                 </div>
                 <footer class="row">
-                    <div class="col-xs-12 col-sm-12">
+                    <div class="col-xs-12">
                         <xsl:copy-of css:select="#viewlet-below-content" />
                     </div>
                 </footer>
@@ -67,7 +70,7 @@
                 <div class="col-sm-3 col-md-2 sidebar">
                     <aside id="portal-column-one">
                         <xsl:apply-templates css:select="#portal-logo" />
-                        <br />
+                        <br /><br />
                         <ul class="nav nav-sidebar">
                             <xsl:apply-templates css:select="#portal-globalnav > li" />
                         </ul>
