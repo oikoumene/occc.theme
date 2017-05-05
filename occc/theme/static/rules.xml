@@ -50,7 +50,9 @@
                         </div>
                         <xsl:apply-templates css:select="#edit-bar" />
                         <xsl:apply-templates css:select="#kssPortalMessage" />
-                        <xsl:apply-templates css:select="#content" />
+                        <div style="padding:15px;background-color:#E8F0FA">
+                            <xsl:apply-templates css:select="#content" />
+                        </div>
                     </div>
                 </div>
                 <footer class="row">
