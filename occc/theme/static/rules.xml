@@ -36,6 +36,12 @@
               </ul>
         </before>
 
+        <!-- portal-personaltools -->
+        <replace
+            css:theme-children="#main-login"
+            css:content="#portal-personaltools"
+            />
+
         <!-- Central column -->
         <replace css:theme="#main-content-container" method="raw">
 
