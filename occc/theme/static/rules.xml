@@ -26,16 +26,6 @@
         <replace css:theme="#portal-logo"
             css:content="#portal-logo"/>
 
-        <!-- navigation -->
-        <before css:theme-children="#column1-container">
-            <ul class="nav nav-sidebar">
-                <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Reports</a></li>
-                <li><a href="#">Analytics</a></li>
-                <li><a href="#">Export</a></li>
-              </ul>
-        </before>
-
         <!-- portal-personaltools -->
         <replace
             css:theme-children="#main-login"
