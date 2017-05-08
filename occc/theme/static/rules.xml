@@ -32,6 +32,18 @@
             css:content="#portal-personaltools"
             />
 
+        <!-- landing page portlet -->
+        <replace css:content="#portlets-below-title">
+            <div class="row">
+            <xsl:for-each css:select="#portlets-below-title > .cell">
+                  <div class="col-sm-6" style="margin-bottom:20px;">
+                    <xsl:apply-templates css:select=".portletWrapper" />
+                  </div>
+            </xsl:for-each>
+        </div>
+        </replace>
+        
+
         <!-- Central column -->
         <replace css:theme="#main-content-container" method="raw">
 
