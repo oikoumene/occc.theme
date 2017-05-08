@@ -67,8 +67,17 @@ dl.portlet{
   margin-bottom: 20px;
   font-size: 14px !important;
 }
+.home-portlet > div:nth-child(1):after{
+  content: " ";
+  clear: both;
+  display: block;
+}
 .home-portlet dl.portlet{
   box-shadow: 0 0 5px #ccc;
+}
+.home-portlet .portletCollection dd{
+  padding-top: 0;
+  padding-bottom: 0
 }
 dl.portlet > dd,
 dl.portlet > dt{padding: 10px 15px !important}
