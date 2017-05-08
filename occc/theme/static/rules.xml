@@ -44,7 +44,7 @@
         <replace css:content="#portlets-below-title" css-if-content=".section-front-page">
             <div class="row home-portlet">
             <xsl:for-each css:select="#portlets-below-title > .cell">
-                  <div class="col-sm-6" style="margin-bottom:20px;">
+                  <div class="col-sm-6" style="margin-bottom:10px;">
                     <xsl:apply-templates css:select=".portletWrapper" />
                   </div>
             </xsl:for-each>
