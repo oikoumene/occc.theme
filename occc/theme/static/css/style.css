@@ -123,21 +123,15 @@ label .label{
 }
 /*language*/
 #portal-languageselector {
-  float: right;
   background: #e3e3e3;
-  position: relative;
+  position: absolute;
   top: 0;
   right: 65px;
   z-index: 3; 
   padding: 5px;
   font-size: 80%; 
-  border-bottom-right-radius: 0.5em;
-  border-bottom-left-radius: 0.5em;
-  -webkit-border-bottom-right-radius: 0.5em;
-  -webkit-border-bottom-left-radius: 0.5em;
-  -moz-border-radius-bottomleft: 0.5em;
-  -moz-border-radius-bottomright: 0.5em;
-  max-width: 50%;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 0;
 }
 
 /*Forms elements*/
