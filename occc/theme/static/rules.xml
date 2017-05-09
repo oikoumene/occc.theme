@@ -23,9 +23,6 @@
         <replace css:theme-children="#portal-searchbox"
             css:content-children="#portal-searchbox"/>
 
-        <replace css:theme="#portal-logo"
-            css:content="#portal-logo"/>
-
         <!-- navigaton -->
         <!-- <after css:theme-children="#main-header" css:content="#portal-globalnav" /> -->
 
@@ -34,11 +31,15 @@
             css:theme-children="#main-login"
             css:content="#portal-personaltools"
             />
-        <!-- portal-personaltools -->
-        <replace
+
+        <!-- <replace
             css:theme-children="#main-header"
             css:content="#portal-logo"
-            />
+            /> -->
+        <replace css:theme-children="#main-header">
+            <img src="./media/banner/banner" alt="" />
+        </replace>
+            
 
         <!-- landing page portlet -->
         <replace css:content="#portlets-below-title" css-if-content=".section-front-page">
@@ -78,10 +79,10 @@
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                   <div class="item active">
-                                    <img src="/++theme++occc.theme/img/07.jpg" alt=""/>
+                                    <img src="./media/slider/slider-img-01" alt="image 01"/>
                                   </div>
                                   <div class="item">
-                                    <img src="/++theme++occc.theme/img/10.jpg" alt=""/>
+                                    <img src="./media/slider/slider-img-02" alt="image 02"/>
                                   </div>
                                 </div>
 
