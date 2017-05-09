@@ -27,7 +27,7 @@
             css:content="#portal-logo"/>
 
         <!-- navigaton -->
-        <after css:theme-children="#main-header" css:content="#portal-globalnav" />
+        <!-- <after css:theme-children="#main-header" css:content="#portal-globalnav" /> -->
 
         <!-- portal-personaltools -->
         <replace
