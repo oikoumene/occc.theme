@@ -25,12 +25,12 @@
 
         <!-- navigaton -->
         <!-- <after css:theme-children="#main-header" css:content="#portal-globalnav" /> -->
-
+        
         <!-- portal-personaltools -->
-        <replace
-            css:theme-children="#main-login"
-            css:content="#portal-personaltools"
-            />
+        <replace css:theme-children="#main-login">
+            <xsl:apply-templates css:select="#portal-personaltools" />
+            <xsl:apply-templates css:select="#portal-languageselector" />
+        </replace>
 
         <!-- <replace
             css:theme-children="#main-header"

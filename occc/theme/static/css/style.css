@@ -14,6 +14,11 @@ body{background-color: #f1f1f1}
   margin-bottom: 10px;
 }
 
+/*login*/
+#main-login{
+  position: relative;
+}
+
 /* Sidebar */
 .sidebar{
   /*background-color: #E8F0FA;*/
@@ -104,15 +109,35 @@ label .label{
 }
 #portal-personaltools{
   position: absolute;
-    right: 13%;
-    background-color: #e3e3e3;
-    padding: 5px;
-    z-index: 1;
-    font-size: 80%;
-    border-radius: 0 0 5px 5px;
+  right: 0;
+  background-color: #e3e3e3;
+  padding: 5px;
+  z-index: 1;
+  font-size: 80%;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 #portal-personaltools dd a:hover{
   background-color: #799D2D;
+}
+/*language*/
+#portal-languageselector {
+  float: right;
+  background: #e3e3e3;
+  position: relative;
+  top: 0;
+  right: 65px;
+  z-index: 3; 
+  padding: 5px;
+  font-size: 80%; 
+  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  -webkit-border-bottom-right-radius: 0.5em;
+  -webkit-border-bottom-left-radius: 0.5em;
+  -moz-border-radius-bottomleft: 0.5em;
+  -moz-border-radius-bottomright: 0.5em;
+  max-width: 50%;
 }
 
 /*Forms elements*/
@@ -211,3 +236,4 @@ globethics-simple-search-occc:after{
 #globethics-simple-search-occc > img{
   display: none !important;
 }
+
