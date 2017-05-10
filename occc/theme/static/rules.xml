@@ -37,7 +37,7 @@
             css:content="#portal-logo"
             /> -->
         <replace css:theme-children="#main-header">
-            <img src="./occc/media/banner/GAF-20170509-banner.png" width="100%" alt="" />
+            <img src="./gaf_occc/en/media/banner/gaf-20170509-banner.png" width="100%" alt="" />
         </replace>
             
 
@@ -79,10 +79,10 @@
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                   <div class="item active">
-                                    <img src="./occc/media/slider/slider-img-01" alt="image 01"/>
+                                    <img src="./gaf_occc/en/media/slider/slider-img-01.jpg" alt="image 01"/>
                                   </div>
                                   <div class="item">
-                                    <img src="./occc/media/slider/slider-img-02" alt="image 02"/>
+                                    <img src="./gaf_occc/en/media/slider/slider-img-02.jpg" alt="image 02"/>
                                   </div>
                                 </div>
 
