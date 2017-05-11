@@ -18,6 +18,10 @@ body{background-color: #f1f1f1}
 #main-login{
   position: relative;
 }
+/*hide login for anonymous user*/
+.userrole-anonymous #portal-personaltools{
+  display: none;
+}
 
 /* Sidebar */
 .sidebar{
