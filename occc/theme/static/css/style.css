@@ -23,9 +23,9 @@ body{background-color: #f1f1f1}
   display: none;
 }
 
-/* Sidebar */
-.sidebar{
-  /*background-color: #E8F0FA;*/
+/*drop title in front page*/
+.section-front-page .documentFirstHeading{
+  display: none;
 }
 
 /* Navigation */
