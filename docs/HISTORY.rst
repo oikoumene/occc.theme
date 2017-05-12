@@ -1,5 +1,9 @@
 Changelog
 =========
+'1.3' - released may 12, 2017
+---------------------
+favicon
+
 '1.2' - released may 11, 2017
 ---------------------
 adjust slder images path and login
