@@ -1,5 +1,9 @@
 Changelog
 =========
+1.4 - released may 19, 2017
+--------------
+chinese and english slider
+
 '1.3' - released may 12, 2017
 ---------------------
 favicon
